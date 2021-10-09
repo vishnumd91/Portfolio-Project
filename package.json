@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack serve --config=webpack.config.dev.js --open",
     "build": "cross-env NODE_ENV=production webpack --config=webpack.config.prod.js",
-    "build-dev": "cross-env NODE_ENV=development webpack --config=webpack.config.dev.js",
+    "build-dev": "webpack --config=webpack.config.dev.js",
     "lint": "eslint src/**/*.js",
     "analyze": "webpack-bundle-analyzer --port 5002 build/stats.json"
   },
